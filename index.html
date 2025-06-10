@@ -11,27 +11,27 @@ items-center">
         <h1>CALCULATOR</h1>
         <div class="bg-gray-800 rounded-[5px] shadow-md h-[500px] w-[330px]
          p-3 grid grid-cols-4 grid-rows-6 gap-[7px]">
-            <input class=" border-2 bg-white col-span-4 text-4xl rounded-[5px]" type="text">
-            <button class="bg-amber-500 rounded-[5px] text-2xl hover:bg-amber-400">+</button>
-            <button class="bg-amber-500 rounded-[5px] text-2xl hover:bg-amber-400">-</button>
-            <button class="bg-amber-500 rounded-[5px] text-2xl hover:bg-amber-400">*</button>
-            <button class="bg-amber-500 rounded-[5px] text-2xl hover:bg-amber-400">/</button>
-            <button class="bg-gray-500 rounded-[5px] text-2xl hover:bg-gray-400">7</button>
-            <button class="bg-gray-500 rounded-[5px] text-2xl hover:bg-gray-400" >8</button>
-            <button class="bg-gray-500 rounded-[5px] text-2xl hover:bg-gray-400">9</button>
-            <button class="bg-red-500 rounded-[5px] text-2xl hover:bg-red-400">AC</button>
-            <button class="bg-gray-500 rounded-[5px] text-2xl hover:bg-gray-400">4</button>
-            <button class="bg-gray-500 rounded-[5px] text-2xl hover:bg-gray-400">5</button>
-            <button class="bg-gray-500 rounded-[5px] text-2xl hover:bg-gray-400">6</button>
-            <button class="bg-green-500 row-span-3 rounded-[5px] text-2xl hover:bg-green-400">=</button>
-            <button class="bg-gray-500 rounded-[5px] text-2xl hover:bg-gray-400">1</button>
-            <button class="bg-gray-500 rounded-[5px] text-2xl hover:bg-gray-400">2</button>
-            <button class="bg-gray-500 rounded-[5px] text-2xl hover:bg-gray-400" >3</button>
-            <button class="bg-gray-500 rounded-[5px] text-2xl hover:bg-gray-400">.</button>
-            <button   class="bg-amber-300 col-span-2 rounded-[5px] text-2xl hover:bg-amber-200" >0</button>
+            <input readonly id="display" class=" border-2 bg-white col-span-4 text-4xl rounded-[5px]" type="text">
+            <button class="bg-amber-500 rounded-[5px] text-2xl hover:bg-amber-400" onclick="appendToDisplay('+')">+</button>
+            <button class="bg-amber-500 rounded-[5px] text-2xl hover:bg-amber-400" onclick="appendToDisplay('-')">-</button>
+            <button class="bg-amber-500 rounded-[5px] text-2xl hover:bg-amber-400" onclick="appendToDisplay('*')">*</button>
+            <button class="bg-amber-500 rounded-[5px] text-2xl hover:bg-amber-400" onclick="appendToDisplay('/')">/</button>
+            <button class="bg-gray-500 rounded-[5px] text-2xl hover:bg-gray-400" onclick="appendToDisplay('7')">7</button>
+            <button class="bg-gray-500 rounded-[5px] text-2xl hover:bg-gray-400" onclick="appendToDisplay('8')" >8</button>
+            <button class="bg-gray-500 rounded-[5px] text-2xl hover:bg-gray-400" onclick="appendToDisplay('9')">9</button>
+            <button class="bg-red-500 rounded-[5px] text-2xl hover:bg-red-400" onclick="clearDisplay()">AC</button>
+            <button class="bg-gray-500 rounded-[5px] text-2xl hover:bg-gray-400" onclick="appendToDisplay('5')">4</button>
+            <button class="bg-gray-500 rounded-[5px] text-2xl hover:bg-gray-400" onclick="appendToDisplay('5')">5</button>
+            <button class="bg-gray-500 rounded-[5px] text-2xl hover:bg-gray-400" onclick="appendToDisplay('6')">6</button>
+            <button class="bg-green-500 row-span-3 rounded-[5px] text-2xl hover:bg-green-400" onclick="calculate()">=</button>
+            <button class="bg-gray-500 rounded-[5px] text-2xl hover:bg-gray-400" onclick="appendToDisplay('1')">1</button>
+            <button class="bg-gray-500 rounded-[5px] text-2xl hover:bg-gray-400" onclick="appendToDisplay('2')">2</button>
+            <button class="bg-gray-500 rounded-[5px] text-2xl hover:bg-gray-400" onclick="appendToDisplay('3')" >3</button>
+            <button class="bg-gray-500 rounded-[5px] text-2xl hover:bg-gray-400" onclick="appendToDisplay('.')">.</button>
+            <button   class="bg-amber-300 col-span-2 rounded-[5px] text-2xl hover:bg-amber-200" onclick="appendToDisplay('0')" >0</button>
              
             
         </div>
-    
+    <script src="script.js" ></script>
 </body>
 </html>
